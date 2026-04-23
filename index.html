@@ -1,25 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <title>Desert Oasis – Crash Site</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <div id="ui">WASD – move | mouse – look | click to lock</div>
-  <div id="status"></div>
-  <div id="crosshair">+</div>
-  <div id="btn-panel">
-    <button onclick="toggleTime()">Day / Night [T]</button>
-    <button onclick="handleRainKey()">Rain [R]</button>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Desert Oasis – Crash Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="ui">WASD – move | mouse – look | click to lock</div>
+    <div id="status"></div>
+    <div id="crosshair">+</div>
+    <div id="btn-panel">
+      <button onclick="toggleTimeOfDay()">Day / Night [T]</button>
+      <button onclick="toggleRain()">Rain [R]</button>
+    </div>
 
-  <!-- Three.js from CDN -->
-  <script async src="https://cdn.jsdelivr.net/npm/three@r128/build/three.min.js"></script>
-  <script async src="https://cdn.jsdelivr.net/npm/three@r128/examples/js/controls/PointerLockControls.js"></script>
+    <!-- Three.js from CDN -->
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/three@r128/build/three.min.js"
+    ></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/three@r128/examples/js/controls/PointerLockControls.js"
+    ></script>
 
-
-  <!-- Scene logic -->
-  <script src="main.js"></script>
-</body>
+    <!-- Scene logic -->
+    <script src="main.js"></script>
+  </body>
 </html>
