@@ -241,6 +241,20 @@ function moveCamera(dt) {
   camera.position.addScaledVector(dir, speed * dt);
 }
 
+// Add these missing functions to your main.js:
+
+function toggleTime() {
+  night = !night;
+  sun.intensity = night ? 0.2 : 2.5;
+  ambient.intensity = night ? 0.1 : 0.7;
+}
+
+function handleRainKey() {
+  // Add rain logic here
+  console.log('Rain toggled');
+  // You can implement rain particle system later
+}
+
 
 // ─────────────────────────────────────────────────────────────────────────────
 // ANIMATION LOOP
